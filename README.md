@@ -49,8 +49,26 @@ ARAP and ACCRUAL each contain their own company mapping, account mapping,
 AX template and D365 template. Pool contains its own company mapping.
 No external reference-file folders are needed for deployment.
 
+## Redcare corporate layout
+
+The shared Home, ARAP, Pool and ACCRUAL pages use the Redcare colour palette:
+off-white (#FFEEE8), brown (#2B140E), peach (#FFC7B1), and red (#ED0334) accents.
+The official Redcare logo and Redcare Accessible fonts are embedded in
+finance_app.py, together with the responsive layout and styling. No additional
+files, folders or font-service connections are needed for deployment.
+
+The update includes a branded header, workflow cards, matching upload controls,
+result metrics and download buttons, plus a mobile layout.
+
+Brand sources:
+- https://redcare.hypedev.23x.me/colour/
+- https://redcare.hypedev.23x.me/typography/
+- https://redcare.hypedev.23x.me/logo/
+
 ## Validation
 
 The standalone app was tested from a folder containing only finance_app.py and
 requirements.txt. ARAP, Pool and ACCRUAL each processed a sample workbook and
 provided downloads. Navigation and widget reruns were also checked.
+
+The corporate layout was also inspected in a browser at desktop and mobile widths.
