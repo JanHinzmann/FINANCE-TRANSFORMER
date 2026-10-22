@@ -1,4 +1,4 @@
-# Finance Apps: ARAP, Pool and ACCRUAL
+# Finance Apps: ARAP, POOL and ACCRUAL
 
 This folder contains everything required for the combined Streamlit app.
 
@@ -31,7 +31,7 @@ If an existing deployment still shows an old error after updating, reboot it.
 
 ## Using the app
 
-The top navigation provides Home, ARAP, Pool and ACCRUAL.
+The top navigation provides Home, ARAP, POOL and ACCRUAL.
 Each app also has its own path: /arap, /pool and /accrual.
 Open them in separate browser tabs to keep independent uploads and inputs.
 Switching apps within one browser tab can reset inputs and uploads.
@@ -46,12 +46,12 @@ python -m streamlit run finance_app.py
 ## Included reference files
 
 ARAP and ACCRUAL each contain their own company mapping, account mapping,
-AX template and D365 template. Pool contains its own company mapping.
+AX template and D365 template. POOL contains its own company mapping.
 No external reference-file folders are needed for deployment.
 
 ## Redcare corporate layout
 
-The shared Home, ARAP, Pool and ACCRUAL pages use the Redcare colour palette:
+The shared Home, ARAP, POOL and ACCRUAL pages use the Redcare colour palette:
 off-white (#FFEEE8), brown (#2B140E), peach (#FFC7B1), and red (#ED0334) accents.
 The official Redcare logo and Redcare Accessible fonts are embedded in
 finance_app.py, together with the responsive layout and styling. No additional
@@ -65,10 +65,13 @@ Brand sources:
 - https://redcare.hypedev.23x.me/typography/
 - https://redcare.hypedev.23x.me/logo/
 
+All three Home cards use the same off-white background. The POOL app name is
+capitalized consistently in navigation, cards, links and the app title.
+
 ## Validation
 
 The standalone app was tested from a folder containing only finance_app.py and
-requirements.txt. ARAP, Pool and ACCRUAL each processed a sample workbook and
+requirements.txt. ARAP, POOL and ACCRUAL each processed a sample workbook and
 provided downloads. Navigation and widget reruns were also checked.
 
 The corporate layout was also inspected in a browser at desktop and mobile widths.
